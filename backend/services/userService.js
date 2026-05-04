@@ -64,18 +64,6 @@ class UserService {
     return safeUser;
   }
 
-  /**
-   * Delete user account
-   */
-  async deleteUser(userId) {
-    const deletedUser = await db
-      .delete(users)
-      .where(eq(users.id, userId))
-      .returning();
-
-    return deletedUser.length > 0;
-  }
-
   //Get all users (admin only)
   async getAllUsers(limit = 50, offset = 0) {
     const userList = await db.select().from(users).limit(limit).offset(offset);

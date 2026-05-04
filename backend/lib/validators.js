@@ -6,7 +6,7 @@ function validateRegistration(data) {
     return { valid: false, error: "Missing required fields" };
   }
 
-  if (data.password.length < 8) {
+  if (data.password.length < 6) {
     return { valid: false, error: "Password must be at least 6 characters" };
   }
 
