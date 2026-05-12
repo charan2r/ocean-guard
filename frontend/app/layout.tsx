@@ -14,35 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "OceanWatch - Marine Conservation Platform",
-  description:
-    "Discover, protect, and explore marine biodiversity through AI-powered species recognition, citizen science, and conservation projects.",
-  generator: "v0.app",
-  keywords: [
-    "marine conservation",
-    "ocean",
-    "species recognition",
-    "AI",
-    "biodiversity",
-    "citizen science",
-  ],
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+  title: "OceanWatch",
 };
 
 export const viewport: Viewport = {
